@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: auto;
 }
-h1{
+
+h1 {
     text-align: center;
-    color: #e446b7 ;
+    color: #e446b7;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
 }
-nav{
+
+nav {
     text-align: center;
     margin-bottom: 20px;
 }
-nav span{
+
+nav span {
     display: inline-block;
     background-color: #000;
     color: #fff;
@@ -28,21 +34,25 @@ nav span{
     margin: 0 5px;
     cursor: pointer;
 }
-nav span:hover{
+
+nav span:hover {
     color: red;
 }
-header input{
+
+header input {
     padding: 5px 10px;
     border: none;
     border: 2px solid #ccc;
     border-radius: 30px;
 }
-header button{
+
+header button {
     border: none;
     padding: 7px 10px;
     border-radius: 30px;
     border: 2px solid #ccc;
 }
+
 .container-noticias{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -59,7 +69,7 @@ header button{
     transition: .3s;
 }
 .container-noticias .item:hover{
-    box-shadow: 0 0 10px 5px #e446b7;
+    box-shadow: 0 0 10px 5px #ccc;
 }
 .container-noticias .item:hover h2{
     text-decoration: underline;
@@ -79,76 +89,102 @@ header button{
 .container-noticias #btnSiguiente:hover{
     color: #fc0505;
 }
-
-*------Agrego encabezado y pie de pagina----*
-header{
-    display:flex;
+*------Agrego encabezado ----* header {
+    display: flex;
     min-height: 70px;
     background-color: blueviolet;
     justify-content: space-between;
     align-items: center;
-    padding: 10px ;
-  }
-.logo{
-    display:flex;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
     align-items: center;
 }
-.logo img{
-    height:50px;
-    
+
+.logo img {
+    height: 50px;
+
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
     align-items: center;
 }
 
-nav a{
+nav a {
     font-weight: 600;
     padding-right: 10px;
 
 }
 
-nav a:hover{
+nav a:hover {
     color: #e446b7;
 }
-@media (max-width:700px){
-    header{
-        flex-direction:column;
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
     }
 
-    nav{
+    nav {
         padding: 10px 0;
     }
 }
 
 /*sobre nosotros*/
-section{
+section {
     margin: auto;
     width: 95%;
     padding: 20px 0;
     display: flex;
 }
-.Titulo{
+
+.Titulo {
     font-size: 30px;
     font-weight: bold;
     color: #e446b7;
-    margin-bottom: 10px;      
+    margin-bottom: 10px;
 }
 
-.Nosotros_texto{    
+.Nosotros_texto {
     width: 50%;
     float: left;
     font-size: 18px;
     padding: 0 5% 0 5%;
     text-align: justify;
-   }
-.Nosotros_img{
+}
+
+.Nosotros_img {
     float: left;
     width: 20%;
     margin: 70px;
 }
-.Nosotros_logo{
+
+.Nosotros_logo {
     width: 100%;
     object-fit: cover;
+}
+
+*--------- Estilo Noticias Destacadas ---------------------* 
+div{
+    display: flex;
+}
+
+.Destacada_texto {
+    width: 70%;
+    float: right;
+    text-align: justify;
+    font-size: 15px;
+    padding: 0 5% 0 5%;
+    
+}
+
+.Destacada_img {
+    float: left;
+    width: 20%;
+    margin: 1%;
+    border-radius: 20px;
 }

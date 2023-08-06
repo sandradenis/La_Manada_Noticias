@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>LA MANADA - NOTICIAS</title>
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png">
+</head>
+<header>
+<div class="logo">
+    <img src="./logo.jpg" alt="Logo de la empresa">
+    <h2 class="Nombre">LA MANADA DE LOBAS</h2>
+</div>
+<nav>
+    <a href="./Index.html"class="nav-link">Inicio</a> 
+    <a href="./Noticias_destacadas.html"class="nav-link">Noticias Destacadas</a> 
+    <a href="./Sobre_nosotros.html"class="nav-link">Sobre nosotros</a> 
+
+</nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>LAS NOTICIAS DEL MOMENTO</h1>
+        <header>
+            <nav>
+                <span class="cat" onclick="buscar('Tecnología')">Tecnología</span>
+                <span class="cat" onclick="buscar('programación')">Programación</span>
+                <span class="cat" onclick="buscar('deportes')">Deportes</span>
+                <span class="cat" onclick="buscar('economía')">Economía</span>
+                <span class="cat" onclick="buscar('educación')">Educación</span>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Qué desea buscar" id="busqueda">
+                <button onclick="buscarTema()">Buscar</button>
+            </div>
+        </header>
+
+
+        <div class="container-noticias">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>

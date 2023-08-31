@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./estilofiltro.css">
     <title>LA MANADA - NOTICIAS</title>
     <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png">
 </head>
@@ -15,7 +15,7 @@
         <h2 class="Nombre">LA MANADA DE LOBAS</h2>
     </div>
     <nav>
-        <a href="./Index.html" class="nav-link">Inicio</a>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
         <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
         <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
     </nav>
@@ -25,66 +25,118 @@
 <body>
     <h1>LAS NOTICIAS DESTACADAS</h1>
     <br><br>
-    <div class="busqueda">
-        <input type="text" placeholder="Qué desea buscar" id="busqueda">
-        <button onclick="buscarTema()">Buscar</button>
-    </div>
-    <br><br>
-    <div class="container">
-        <div class="container-noticias">
-            <div class="item">
-                <nav>
-                    <a href="./NoticiaBarney.html">
-                    </nav>
-                    <h2>Estafador: Carlos Arturo Hurtado roba dinero amenazando gente por Whatsapp.</h2></a><img
-                        src="./Fotos/Barney.jpg">
-                    <div class="info_item"><span class="fecha">01-08-2023</span><span class="fuente">La Manada</span>
-                    </div>
-                
-            </div>
+   
+     <section>
+        <div id="buttons">
+            <button class="label" onclick="filterObjects('all')">todos</button>
+            <button class="label" onclick="filterObjects('estafadores')">Estafadores</button>
+            <button class="label" onclick="filterObjects('viudas')">Viudas Negras</button>
+            <button class="label" onclick="filterObjects('alertas')">Alerta Pedófilos</button>
 
-            <div class="item">
-                <nav>
-                    <a href="./NoticiaGutmon.html">
-                </nav>
-                <h2>Crimen Pasional: Blanca Gutierrez Mondragón mata a su pareja a cuchilladas.</h2></a><img
-                    src="./Fotos/Gutmon.jpg">
-                <div class="info_item"><span class="fecha">01-08-2023</span><span class="fuente">La Manada</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <nav>
-                    <a href="./NoticiaLatino.html">
-                </nav>
-                <h2>Alerta Pedofilos: Se busca uber que engañaba mujeres para abusar de sus hijas.</h2></a><img
-                    src="./Fotos/Latino.jpg">
-                <div class="info_item"><span class="fecha">02-08-2023</span><span class="fuente">La Manada</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <nav>
-                    <a href="">
-                </nav>
-                <h2>El drama de José Carmen Leaños: una viuda negra lo drogó para desvalijarle la casa y ahora solo tiene una foto para encontrarla</h2></a><img
-                    src="./Fotos/Vitalia.jpg">
-                <div class="info_item"><span class="fecha">03-08-2023</span><span class="fuente">La Manada</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <nav>
-                    <a href="./NoticiaFilipeto.html">
-                </nav>
-                <h2>Alerta Pedófilos: Jorge Armando Maldonado Garza, utiliza redes sociales de su hija para abusar de menores.</h2></a><img
-                    src="./Fotos/Filipeto.jpg">
-                <div class="info_item"><span class="fecha">04-08-2023</span><span class="fuente">La Manada</span>
-                </div>
-            </div>
         </div>
-    </div>
+        <br><br>
+        <div class="object">
+            <div class="box estafadores">
+                <div class="item">
 
+                    <a href="./Noticia_Estafador Carlos Arturo Hurtado.html">
+                        <h3>Estafador: Carlos Arturo Hurtado roba dinero amenazando gente por Whatsapp.</h3>
+                    </a><img src="./Fotos/Barney.jpg">
+                    <div class="info_item"><span class="fecha">01-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box Viudas">
+                <div class="item">
+
+                    <a href="./Noticia_Crimen Pasional Blanca Gutierrez Mondragón.html">
+
+                        <h3>Crimen Pasional: Blanca Edith Gutierrez Mondragón mata a su pareja a cuchilladas.</h3>
+                    </a><img src="./Fotos/Gutmon.jpg">
+                    <div class="info_item"><span class="fecha">01-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box alertas">
+                <div class="item">
+
+                    <a href="./Noticia_Alerta Pedofilos Marlon aka Latino.html">
+
+                        <h3>Alerta Pedofilos: Se busca uber que engañaba mujeres para abusar de sus hijas.</h3>
+                    </a><img src="./Fotos/Latino.jpg">
+                    <div class="info_item"><span class="fecha">02-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box viudas">
+                <div class="item">
+
+                    <a href="./Noticia_El drama de José Carmen Leaños.html">
+
+                        <h3>Viuda Negra: a José Carmen Leaños, una mujer le robó y ahora
+                            solo tiene una foto para encontrarla</h3>
+                    </a><img src="./Fotos/Vitalia.jpg">
+                    <div class="info_item"><span class="fecha">04-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box alertas">
+                <div class="item">
+                    <a href="./Noticia_Alerta Pedófilos Jorge Armando Maldonado Garza.html">
+
+                        <h3>Alerta Pedófilos: Jorge Armando Maldonado Garza, utiliza redes sociales de su hija para
+                            abusar de
+                            menores.</h3>
+                    </a><img src="./Fotos/Filipeto.jpg">
+                    <div class="info_item"><span class="fecha">04-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box alertas">
+                <div class="item">
+
+                    <a href="./Noticia_Alerta Pedófilos Juan Carlos aka Casike.html">
+
+                        <h3>Alerta Pedófilos: Juan Carlos aka Casike acosaba a menores en su almacén y les ofrecía
+                            caramelos por
+                            un beso en la boca.</h3>
+                    </a><img src="./Fotos/Casike.jpg">
+                    <div class="info_item"><span class="fecha">04-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box viudas">
+                <div class="item">
+
+                    <a href="./Noticia_El drama de José Carmen Leaños.html">
+
+                        <h3>Viuda Negra: Conocida como Mayra Ortiz en ciudad Juárez ya ha 
+                            matado a tres de sus maridos y casi asesina al cuarto.</h3>
+                    </a><img src="./Fotos/Chihuas.jpg">
+                    <div class="info_item"><span class="fecha">13-08-2023</span><span class="fuente">La
+                            Manada</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./comentarios.js"></script>
+    </section>
 </body>
+
 
 </html>

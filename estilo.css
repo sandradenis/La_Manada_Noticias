@@ -18,21 +18,27 @@ h1 {
 header {
     display: flex;
     justify-content: space-between;
-}
 
+}
+.header{
+    border-bottom:  2px solid #e446b7;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
 nav {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
-nav span {
+.label {
     display: inline-block;
     background-color: #000;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 0 5px;
     cursor: pointer;
+    
 }
 
 nav span:hover {
@@ -188,3 +194,56 @@ div{
     margin: 1%;
     border-radius: 20px;
 }
+
+.Titulo2 {
+    font-weight: bold;
+    color: #e446b7;
+    margin-bottom: 10px;
+}
+
+*--------- Filtro ---------------------*
+#search-container{
+        margin: lem0;
+}
+#search-container{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: lem 0.3em;
+}
+#search-container input:focus{
+    border-bottom: #6759ff;
+}
+#search-container bottom{
+    padding: lem 2em;
+    margin-left: lem;
+    background-color: #6759ff;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+
+}
+.button-value{
+    border: 2px solid #6759ff;
+    padding: lem 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+}
+.active{
+    background-color: #6759ff;
+    color: #fff;
+}
+
+*------categorias------*
+
+.show{
+    display: flex;
+}
+
+*--------- Comentarios ---------------------*
+.comentario{
+    color: #110f29;
+    border-bottom: #000;
+   }

@@ -15,7 +15,7 @@
         <h2 class="Nombre">LA MANADA DE LOBAS</h2>
     </div>
     <nav>
-        <a href="./Index.html" class="nav-link">Inicio</a>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
         <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
         <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
 
@@ -26,7 +26,7 @@
     <div class="container">
         <h1>NOTICIA DESTACADA</h1>
         <p>Fecha: 02-08-2023 </p>
-        <h2>Alerta Pedofilos: Se busca uber que engañaba mujeres para abusar de sus hijas.</h2>
+        <h2>Alerta Pedófilos: Marlon aka Latino Se busca uber que engañaba mujeres para abusar de sus hijas.</h2>
         <h3>"El acusado tenía en su celular fotos de niñas entre 1 mes y 12 años y enviaba a sus contactos un “menú” con
             precio"</h3>
 
@@ -37,7 +37,7 @@
                 investiga
                 una supuesta red de pedofilia. Según la Policía, el acusado entregaba fotos, desde bebés
                 hasta nenas de 12 años, para abusos sexuales a cambio de dinero y regalos.</p>
-            <p>El sospechoso, identificado Marlon Fernandez, de 45 años, mantenía relaciones a distancia con mujeres
+            <p>El sospechoso, identificado como Marlon Fernandez, de 45 años, mantenía relaciones a distancia con mujeres
                 solteras y con hijos
                 con el fin de obtener fotos de los menores y así armar una lista de opciones con distintos valores que
                 iban desde “pasar el fin de
@@ -51,28 +51,40 @@
             <p>REDES SOCIALES Y TELEFONOS DE LOS QUE SE CONTACTAN</p>
             
         </div>
-        <br><br>
-        <section>
-            <div class="Comentario">
-                
-               <div>
-                    <h3 class="Titulo">Deje un comentario: </h3>
-                    <textarea id="comment-input"></textarea><br>
-                    <button id="submit-button">Submit</button>
-                </div>
-
-                <div id="comment-section">
-                    <h3 class="Titulo">Los usuarios comentaron:</h3>
-                    <div id="comments-container"></div>
-                </div>
-
+        
+        <section class="container">
+            <div class="Titulo2" id="comment-section">
+                <h2>Comentarios nuestros lectores:</h2>
+                <div class="comment" id="comment-container"></div>
+                <h3>Deje su Nombre y un Comentario:</h3>
+                <textarea id="comment-input"></textarea><br>
+                <button id="submit-button">Submit</button>
             </div>
         </section>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const commentsContainer = document.getElementById("comment-container");
+                const commentInput = document.getElementById("comment-input");
+                const submitButton = document.getElementById("submit-button");
+    
+                submitButton.addEventListener("click", function() {
+                    const commentText = commentInput.value;
+    
+                    if (commentText.trim() !== "") {
+                        const commentElement = document.createElement("div");
+                        commentElement.className = "comment";
+                        commentElement.textContent = commentText;
+                        commentsContainer.appendChild(commentElement);
+    
+                        // Clear the textarea after submission
+                        commentInput.value = "";
+                    }
+                });
+            });
+        </script>
 
-
-    </div>
-
-    <script src="app.js"></script>
+    <script src="./comentarios.js"></script>
 </body>
 
 </html>

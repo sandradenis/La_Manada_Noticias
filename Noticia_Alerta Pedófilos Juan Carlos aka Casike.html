@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>LA MANADA - NOTICIAS</title>
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png">
+</head>
+<header>
+    <div class="logo">
+        <img src="./logo.jpg" alt="Logo de la empresa">
+        <h2 class="Nombre">LA MANADA DE LOBAS</h2>
+    </div>
+    <nav>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
+        <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
+        <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
+
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>NOTICIA DESTACADA</h1>
+        <p>Fecha: 05-08-2023 </p>
+        <h2>Alerta Pedófilos: Juan Carlos aka Casike en Villa Luzuriaga acosaba a menores en su almacén.</h2>
+        <h3>"Es conocido en la cuadra, él y su familia" comentó una vecina de la zona anonadada por la noticia.</h3>
+
+        <img class="Destacada_img" src="./Fotos/Casike.jpg" alt="Foto de Casike">
+
+        <div class="Destacada_texto">
+            <p>Cada vez son más las personas que denuncias casos de abusos con los niños. En Buenos Aires, Argentina un
+                vecino conocido por todos por que era dueño de una almacén en el barrio de Villa Luzuriag lo acusaron
+                ante la justicia por pedófilo.</p>
+            <p>Corre el año 2012 y en este barrio humilde varios testigos no relacionados entre sí, acudieron a la
+                justicia junto a su padres para acusar a "Juan Carlos" el dueño de una almacén de la zona porque les
+                habría ofrecido caramelos a cambio de un beso en la boca.</p>
+            <p>La denuncia fue desestimada en ese entonces porque el acusado en su declaración dice que fue una
+                confusión de los menores, él les ofreció los caramelos sin pedir nada a cambio. Todo había quedado en el
+                olvido hasta que hace 1 semana un testigo menor de edad, declaró en cámara Gessel: "El señor me pidió
+                que lo llamara Casike, y me ofreció un caramela a cambio de un beso, le dije que no y comenzó a
+                perseguirme en su camioneta. Corrí y me escondí en casa hasta que llegó mi mamá" cuenta el menor antes
+                los profesionales de la fiscalía.</p>
+            <p>Hemos publicado la foto en ésta nota y pedimos a la comunidad que nos ayude a identificar al sospechoso,
+                los vecinos hacen guardia por la zona para tratar de identificar la camioneta y al acusado. Quieren
+                evitar que ésta situación se repita. Al correr la noticia, otros chicos también contaron de sus
+                experiencias con este hombre mayor de 50 años, nunca le da su nombre a los chicos que acosa y se hace
+                llamar "Casike", "Cordero de Dios" o "El pastor".</p>
+
+
+        </div>
+        <section class="container">
+            <div class="Titulo2" id="comment-section">
+                <h2>Comentarios nuestros lectores:</h2>
+                <div class="comment" id="comment-container"></div>
+                <h3>Deje su Nombre y un Comentario:</h3>
+                <textarea id="comment-input"></textarea><br>
+                <button id="submit-button">Submit</button>
+            </div>
+        </section>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const commentsContainer = document.getElementById("comment-container");
+                const commentInput = document.getElementById("comment-input");
+                const submitButton = document.getElementById("submit-button");
+    
+                submitButton.addEventListener("click", function() {
+                    const commentText = commentInput.value;
+    
+                    if (commentText.trim() !== "") {
+                        const commentElement = document.createElement("div");
+                        commentElement.className = "comment";
+                        commentElement.textContent = commentText;
+                        commentsContainer.appendChild(commentElement);
+    
+                        // Clear the textarea after submission
+                        commentInput.value = "";
+                    }
+                });
+            });
+        </script>
+
+    <script src="./comentarios.js"></script>
+
+</body>
+
+</html>

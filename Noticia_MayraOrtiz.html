@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>LA MANADA - NOTICIAS</title>
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png">
+</head>
+<header>
+    <div class="logo">
+        <img src="./logo.jpg" alt="Logo de la empresa">
+        <h2 class="Nombre">LA MANADA DE LOBAS</h2>
+    </div>
+    <nav>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
+        <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
+        <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
+
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>NOTICIA DESTACADA</h1>
+        <p>Fecha: 13-08-2023 </p>
+        <h2>Viuda Negra: Conocida como Mayra Ortiz ya ha matado a tres de sus maridos.        </h2>
+        <h3>"Sucede en Monterrey, este señor utiliza tiktok, instagram y facebook con el nombre y foto de su hija para
+            contactar menores de edad y luego pedirles fotos de ellos desnudos."</h3>
+
+        <img class="Destacada_img" src="./Fotos/Chihuas.jpg" alt="Foto de Mayra Ortiz">
+
+        <div class="Destacada_texto">
+            <p>Desde Chihuaha hasta Texas y desde allí a Ciudad Juárez, Mayra Ortiz ha dejado tres (3) maridos muertos a su paso.
+                Las personas que la conocen atestiguan que siendo enfermera, se ofrece a cuidarlos y termina administrando veneno para asesinarlos.
+            </p>
+            <p>Hasta el momento se desconoce el paradero de la acusada, se fue de Texas, USA hace 6 meses y hasta el momento solo se sabe que vive 
+                junto a sus hijos discapacitados en Ciudad de Juárez.</p>
+            <p>La denuncia la realizan los familiares de su actual conquista, indican que el señor es diabetico y que Mayra le
+                prepara alimentos con azucar y hasta le da bebidas azucaras y alcohol a escondidas de los hijos.</p>
+            <p>La denuncia indica que el señor conoció a la Viuda Negra de Chihuaha en una app de Citas, y que sin mediar mucha palabra
+                la señora le realizó una video llamada para mostrarse. Comensaron a hablar por telefono y por mensaje; hasta que la señora
+            le dijo que iría a su ciudad de vacaciones.</p>
+            <p>Finalmente se apareció en el domicilio de quien ahora se encuentra muy grave de salud, y por ahora mantendremos anonimo
+                con sus hijos y le pidió techo por uno días. Nunca se fue y se apoderó tanto de la casa como de los ingresos del señor.
+            </p>
+            <p>La familia espera que publicando la foto de la Viudad Negra de Chihuaha; otras personas puedan dar datos de su paradero 
+                o de los casos anteriores, ya que sus hijos pertenecen a matrimonios previos y lo maridos murieron en circunstancias
+            sospechosas que no se han podido aclarar. </p>
+            
+        </div>
+
+        <section class="container">
+            <div class="Titulo2" id="comment-section">
+                <h2>Comentarios nuestros lectores:</h2>
+                <div class="comment" id="comment-container"></div>
+                <h3>Deje su Nombre y un Comentario:</h3>
+                <textarea id="comment-input"></textarea><br>
+                <button id="submit-button">Submit</button>
+            </div>
+        </section>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const commentsContainer = document.getElementById("comment-container");
+                const commentInput = document.getElementById("comment-input");
+                const submitButton = document.getElementById("submit-button");
+    
+                submitButton.addEventListener("click", function() {
+                    const commentText = commentInput.value;
+    
+                    if (commentText.trim() !== "") {
+                        const commentElement = document.createElement("div");
+                        commentElement.className = "comment";
+                        commentElement.textContent = commentText;
+                        commentsContainer.appendChild(commentElement);
+    
+                        // Clear the textarea after submission
+                        commentInput.value = "";
+                    }
+                });
+            });
+        </script>
+
+    <script src="./comentarios.js"></script>
+    </div>
+
+    <script src="./comentarios.js"></script>
+
+</body>
+
+</html>

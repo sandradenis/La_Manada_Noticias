@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: auto;
+}
+
+.object {
+    max-width: 1500px;
+    justify-content: center;
+    align-items: center;    
+}
+
+h1 {
+    text-align: center;
+    color: #e446b7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.header{
+    border-bottom:  2px solid #e446b7;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.label {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+
+span:hover {
+    color: red;
+}
+
+header input {
+    padding: 5px 10px;
+    border: none;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+
+header button {
+    border: none;
+    padding: 7px 10px;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+}
+
+
+*------Agrego encabezado ----* 
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: blueviolet;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+
+nav a:hover {
+    color: #e446b7;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .box{
+        line-height: 30px;
+        margin: 5px;
+        max-width: 150px;
+        padding: 5px;
+
+    }
+}
+
+
+
+*--------- Filtro por categorias ---------------------*
+
+.show{
+    display:inline-block;
+}
+
+section{
+    display:flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    float:center;  
+    line-height: 50px;
+    text-align: center;
+    margin: 10px;
+    background-color: #eee;
+    max-width: 300px;
+    border:2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.show{
+    display:inline-block;
+}
+
+.box:hover{
+    box-shadow: 0 0 10px 5px #e446b7;
+}
+.item:hover h2{
+    text-decoration: underline;
+}
+.item .info_item{
+    display: flex;
+    justify-content: space-between;
+    }
+.item img{
+    width: 100%;
+}
+
+.comment{
+    color: #110f29;
+}

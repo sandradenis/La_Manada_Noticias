@@ -15,7 +15,7 @@
         <h2 class="Nombre">LA MANADA DE LOBAS</h2>
     </div>
     <nav>
-        <a href="./Index.html" class="nav-link">Inicio</a>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
         <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
         <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
 
@@ -34,7 +34,7 @@
         <img class="Destacada_img" src="./Fotos/Vitalia.jpg" alt="Foto de Vitalia">
 
         <div class="Destacada_texto">
-            <p>No es fácil decir “yo fui víctima de una viuda negra”. El pudor, la vergüenza y la culpa hacen que este
+            <p>No es fácil decir “yo fui víctima de una viuda negra”. El pudor, la vergüenza y la culpa hacen que éste
                 tipo de robo y ataque sea poco denunciado. José Carmen necesita contar lo que le pasó. El dolor y la
                 necesidad de prevenir a otros hicieron que diera la cara. Es una de las pocas veces que una víctima de
                 una “viuda negra”, cuenta su experiencia.</p>
@@ -50,24 +50,42 @@
 
 
         </div>
-        <section>
-            <div class="Comentario">
-
-                <div>
-                    <h3 class="Titulo">Deje un comentario: </h3>
-                    <textarea id="comment-input"></textarea><br>
-                    <button id="submit-button">Submit</button>
-                </div>
-
-                <div id="comment-section">
-                    <h3 class="Titulo">Los usuarios comentaron:</h3>
-                    <div id="comments-container"></div>
-                </div>
-
+        <section class="container">
+            <div class="Titulo2" id="comment-section">
+                <h2>Comentarios nuestros lectores:</h2>
+                <div class="comment" id="comment-container"></div>
+                <h3>Deje su Nombre y un Comentario:</h3>
+                <textarea id="comment-input"></textarea><br>
+                <button id="submit-button">Submit</button>
             </div>
         </section>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const commentsContainer = document.getElementById("comment-container");
+                const commentInput = document.getElementById("comment-input");
+                const submitButton = document.getElementById("submit-button");
+    
+                submitButton.addEventListener("click", function() {
+                    const commentText = commentInput.value;
+    
+                    if (commentText.trim() !== "") {
+                        const commentElement = document.createElement("div");
+                        commentElement.className = "comment";
+                        commentElement.textContent = commentText;
+                        commentsContainer.appendChild(commentElement);
+    
+                        // Clear the textarea after submission
+                        commentInput.value = "";
+                    }
+                });
+            });
+        </script>
+
+    <script src="./comentarios.js"></script>
     </div>
-    <script src="app.js"></script>
+   
+<script src="./comentarios.js"></script>
 
 </body>
 

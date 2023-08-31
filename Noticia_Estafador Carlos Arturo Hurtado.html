@@ -15,7 +15,7 @@
         <h2 class="Nombre">LA MANADA DE LOBAS</h2>
     </div>
     <nav>
-        <a href="./Index.html" class="nav-link">Inicio</a>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
         <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
         <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
 
@@ -34,39 +34,53 @@
         <img class="Destacada_img" src="./Fotos/Barney.jpg" alt="Foto de Carlos Hurtado">
 
         <div class="Destacada_texto">
-            <p>Varias personas han sido victimas de llamadas extorsivas por parte de una persona que se identifica como
+            <p>Varias personas han sido víctimas de llamadas extorsivas por parte de una persona que se identifica como
                 Carlos Arturo Hurtado Vázquez. Las llamadas consisten en reclamos sobre dinero adeudado que debe
                 abonarse urgentemente.</p>
             <p>Este estafador trabaja en conjunto con su novia Andrea Serrano Gumeta, quien aporta los datos de la
                 cuenta bancaria donde Hurtado Vázquez pide que se deposite el dinero que reclama.</p>
-            <p>La formas de contacto son varias, puede utilizar Messenger de Facebook o Whatsapp, se contacto desde sus
+            <p>La formas de contacto son varias, puede utilizar Messenger de Facebook o Whatsapp, se contactó desde sus
                 redes sociales y si la persona se niega a pagar los amenaza con publicar sus datos personales y fotos de
                 familiares en las redes sociales.</p>
             <p>Uno de los testigos nos informó:“Me pidieron dinero por una supuesta deuda contraída por mi hijo. Querían
-                darme miedo para que yo no avisara nada, una persona llegó a anular la transferencia de 75 mil pesos”,
+                darme miedo para que yo no avisara a la policía, una persona llegó a anular la transferencia de 75 mil pesos”,
                 sumó. Además, contó que a otra conocida le pidieron 120 mil pesos.</p>
   
         </div>
 
-        <section>
-            <div class="Comentario">
-                
-               <div>
-                    <h3 class="Titulo">Deje un comentario: </h3>
-                    <textarea id="comment-input"></textarea><br>
-                    <button id="submit-button">Submit</button>
-                </div>
-
-                <div id="comment-section">
-                    <h3 class="Titulo">Los usuarios comentaron:</h3>
-                    <div id="comments-container"></div>
-                </div>
-
+        <section class="container">
+            <div class="Titulo2" id="comment-section">
+                <h2>Comentarios nuestros lectores:</h2>
+                <div class="comment" id="comment-container"></div>
+                <h3>Deje su Nombre y un Comentario:</h3>
+                <textarea id="comment-input"></textarea><br>
+                <button id="submit-button">Submit</button>
             </div>
         </section>
-    </div>
-   
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const commentsContainer = document.getElementById("comment-container");
+                const commentInput = document.getElementById("comment-input");
+                const submitButton = document.getElementById("submit-button");
+    
+                submitButton.addEventListener("click", function() {
+                    const commentText = commentInput.value;
+    
+                    if (commentText.trim() !== "") {
+                        const commentElement = document.createElement("div");
+                        commentElement.className = "comment";
+                        commentElement.textContent = commentText;
+                        commentsContainer.appendChild(commentElement);
+    
+                        // Clear the textarea after submission
+                        commentInput.value = "";
+                    }
+                });
+            });
+        </script>
 
+    <script src="./comentarios.js"></script>
 </body>
 
 </html>

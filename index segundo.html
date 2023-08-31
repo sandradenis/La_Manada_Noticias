@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilofiltro.css">
+    <title>LA MANADA - NOTICIAS</title>
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png">
+</head>
+<header>
+    <div class="logo">
+        <img src="./logo.jpg" alt="Logo de la empresa">
+        <h2 class="Nombre">LA MANADA DE LOBAS</h2>
+    </div>
+    <nav>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
+        <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
+        <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
+
+    </nav>
+</header>
+<br><br>
+
+<body>
+    <section>
+        <div id="buttons">
+            <button class="label" onclick="filterObjects('all')">Todos</button>
+            <button class="label" onclick="filterObjects('deporte')">Deportes</button>
+            <button class="label" onclick="filterObjects('politica')">Política</button>
+            <button class="label" onclick="filterObjects('entretenimiento')">Entretenimiento</button>
+            <button class="label" onclick="filterObjects('general')">General</button>
+
+        </div>
+        <br><br>
+        <div class="object">
+            <div class="box politica">
+                <div class="item"
+                    onclick="location.href='https://www.infobae.com/politica/2023/08/31/patricia-bullrich-relanzo-su-campana-con-melconian-los-numeros-importan-pero-hay-que-entender-que-detras-hay-familias/'">
+                    <h2>"Patricia Bullrich, relanzó su campaña con Melconian: “Los números importan, pero hay que entender que detrás hay familias"</h2>
+                    <img
+                        src="https://www.infobae.com/new-resizer/CIG774LHpTDaKQkXZV9czRO6WNY=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/S4RDKJOVW5DK5KW2O7SO76S3KI.jpg">
+                    <div class="info_item"><span class="fecha">31-08-2023, 17:10hs</span><span
+                            class="fuente">Infobae</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box entretenimiento">
+                <div class="item"
+                    onclick="location.href='https://www.infobae.com/teleshow/2023/08/31/murio-silvina-luna-a-los-43-anos/'">
+                    <h2>Murió Silvina Luna a los 43 años
+                        Estaba internada desde el 13 de junio 2023. Profundo dolor en el mundo del espectáculo</h2><img
+                        src="https://www.infobae.com/new-resizer/mFXGefIuJaNakSUKWaUoNLrsxrY=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UMTYKHCNZNDNHNZL6UVNBXNHRE.jpg">
+                    <div class="info_item"><span class="fecha">31-08-2023 11:29hs</span><span
+                            class="fuente">Infobae</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box deporte">
+                <div class="item"
+                    onclick="location.href='https://www.infobae.com/deportes/2023/08/31/a-24-horas-del-cierre-del-mercado-de-pases-el-presidente-del-psg-hablo-sobre-la-situacion-de-mbappe/'">
+                    <h2>“A horas del cierre del mercado de pases, el presidente del PSG habló sobre la situación de Mbappé después del sorteo de la Champions"
+                    </h2><img src="https://www.infobae.com/new-resizer/AEOekfHGMM5y2rynNN1pfdGS4lU=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/BLEOA32LNFFHBMWQCBH4TSO5OQ">
+                    <div class="info_item"><span class="fecha">31-08-2023 16:15hs</span><span class="fuente">Infobae</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box politica">
+                <div class="item"
+                    onclick="location.href='https://tn.com.ar/campo/2023/08/28/dirigentes-del-campo-recibieron-los-anuncios-de-sergio-massa-entre-la-cautela-y-la-disconformidad/'">
+                    <h2>El campo, entre la cautela y las críticas a las medidas de Massa: “No mejoran la realidad
+                        productiva del país ni de los trabajadores”</h2><img
+                        src="https://tn.com.ar/resizer/E8A1RJTgNt9xaGo8DNp9txsXty0=/1440x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/NC2K3DQTBVABTNLOB4KZBYLN4I.jpg">
+                    <div class="info_item"><span class="fecha">28-08-2023, 14:25hs</span><span
+                            class="fuente">TN-Noticias</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box politica">
+                <div class="item politica"
+                    onclick="location.href='https://tn.com.ar/politica/2023/08/28/elecciones-2023-el-gobierno-les-respondio-a-milei-y-bullrich-por-las-criticas-a-las-medidas-economicas/">
+                    <h2>Elecciones 2023: Alberto Fernández redobló las críticas contra la oposición y deslizó una
+                        crítica a Milei</h2><img
+                        src="https://tn.com.ar/resizer/sSVFW_pzVL8vu5i8tCmfSw51anY=/1440x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/LGHF7BARVBGURAN46GV53ULCFM.jpg">
+                    <div class="info_item"><span class="fecha">28-08-2023, 06:05hs</span><span
+                            class="fuente">TN-Noticias</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box politica">
+                <div class="item politica"
+                    onclick="location.href='https://www.infobae.com/politica/2023/08/28/el-presidente-critico-a-la-oposicion-en-un-acto-y-evito-hablar-de-las-medidas-economicas-que-anuncio-massa/'">
+                    <h2>El Presidente criticó a la oposición en un acto y evitó hablar de las medidas económicas que
+                        anunció Massa</h2><img
+                        src="https://www.infobae.com/new-resizer/UkJWFqGChoRrtdZ223os-EuFb4I=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/FN3YYFAE5VBMDAXLICAOL5FTVU.jpg">
+                    <div class="info_item"><span class="fecha">28-08-2023, 16:55hs</span><span
+                            class="fuente">Infobae</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box entretenimiento">
+                <div class="item"
+                    onclick="location.href='https://www.gente.com.ar/actualidad/jorge-lanata-continua-internado-y-este-es-el-ultimo-parte-medico/'">
+                    <h2>"Jorge Lanata: lamentablemente continúa internado y este es el último parte
+                        médico”</h2><img
+                        src="https://www.gente.com.ar/wp-content/uploads/2023/07/Jorge-Lanata-620x464.png.webp">
+                    <div class="info_item"><span class="fecha">27-08-2023 11:29hs</span><span
+                            class="fuente">Gente</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box entretenimiento">
+                <div class="item"
+                    onclick="location.href='https://www.paparazzi.com.ar/teve/angel-de-brito-presento-al-equipo-titular-que-lo-cambiara-todo-en-lam/'">
+                    <h2>El anuncio del conductor Ángel de Brito:"todo va a cambiar muy pronto dentro del programa LAM"
+                    </h2><img
+                        src="https://www.paparazzi.com.ar/wp-content/uploads/2023/08/angel-de-brito-angelitas.jpg.webp">
+                    <div class="info_item"><span class="fecha">27-08-2023 11:29hs</span><span
+                            class="fuente">Paparazzi</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box entretenimiento">
+                <div class="item"
+                    onclick="location.href='https://www.paparazzi.com.ar/teve/el-crudo-relato-de-araceli-gonzalez-sufri-ataques-de-panico-durante-10-anos/'">
+                    <h2>El crudo relato de Araceli González: “Sufrí una enfermedad mental con ataques de pánico”</h2>
+                    <img
+                        src="https://www.paparazzi.com.ar/wp-content/uploads/2023/08/araceli-gonzalez-panico-830x524.jpg.webp">
+                    <div class="info_item"><span class="fecha">27-08-2023 11:29hs</span><span
+                            class="fuente">Paparazzi</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box deporte">
+                <div class="item"
+                    onclick="location.href='https://www.tycsports.com/boca-juniors/boca-plan-valentin-barco-revancha-racing-copa-libertadores-id532020.html'">
+                    <h2>“Libertadores: Boca Juniors planea citar a Valentín Barco para la revancha con Racing y podría jugar como titular"
+                    </h2><img src="https://media.tycsports.com/files/2023/08/28/610927/barco_862x485.webp?v=3">
+                    <div class="info_item"><span class="fecha">28-08-2023 15:15hs</span><span class="fuente">TyC
+                            Sports</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box deporte">
+                <div class="item"
+                    onclick="location.href='https://www.gente.com.ar/actualidad/deportes/los-exitos-del-mundial-de-futbol-femenino-reflejan-las-diferencias-de-genero-entre-paises/'">
+                    <h2>"Los éxitos del Mundial de fútbol femenino reflejan diferencias de género entre países”
+                    </h2><img
+                        src="https://www.gente.com.ar/wp-content/uploads/2023/08/369607440_753498840116707_1255997928937462210_n-620x464.jpg.webp">
+                    <div class="info_item"><span class="fecha">22-08-2023 10:25hs</span><span
+                            class="fuente">Gente</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box deporte">
+                <div class="item"
+                    onclick="location.href='https://www.tycsports.com/san-lorenzo/san-lorenzo-se-entreno-con-nahuel-barrios-a-la-par-del-grupo-id532005.html'">
+                    <h2>“Libertadores: San Lorenzo de Almagro se entrenó con Nahuel Barrios a la par del grupo titular"</h2><img
+                        src="https://media.tycsports.com/files/2023/08/28/610898/nahuel-barrios-entrenamiento-san-lorenzo-2882023_862x485.webp">
+                    <div class="info_item"><span class="fecha">28-08-2023 12:59hs</span><span class="fuente">TyC
+                            Sports</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box general">
+                <div class="item"
+                    onclick="location.href='https://www.infobae.com/cultura/2023/08/28/reponen-en-san-sebastian-una-version-4k-de-nueve-reinas-antes-de-su-regreso-a-los-cines-argentinos/'">
+                    <h2>Nueva versión 4k de “Nueve reinas”, antes de su gran regreso a los cines
+                        argentinos"</h2><img
+                        src="https://www.infobae.com/new-resizer/4L0jgspTDo-mlC--X6gPgKCX8J0=/768x512/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/QBP75J5CJ5DH5NPOHO4R7X44BA.jpg">
+                    <div class="info_item"><span class="fecha">27-08-2023, 10:14hs</span><span
+                            class="fuente">Infobae</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box general">
+                <div class="item"
+                    onclick="location.href='https://www.infobae.com/tecno/2023/08/28/stephen-king-esta-dispuesto-a-que-la-ia-aprenda-de-sus-libros/'">
+                    <h2>Stephen King está dispuesto a que la IA aprenda de sus libros, dijo: "Que desafío".</h2><img
+                        src="https://www.infobae.com/new-resizer/IKeEAXCZxnjbef0MEbahUNBebi4=/768x512/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/FXOWUBGOG5G4JI64KGWJL4WUJY.jpg">
+                    <div class="info_item"><span class="fecha">27-08-2023, 10:14hs</span><span
+                            class="fuente">Infobae</span>
+                    </div>
+                </div>
+            </div>
+
+  <script src="./comentarios.js"></script>
+    </section>
+</body>
+
+
+</html>

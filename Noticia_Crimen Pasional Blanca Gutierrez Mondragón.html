@@ -15,7 +15,7 @@
         <h2 class="Nombre">LA MANADA DE LOBAS</h2>
     </div>
     <nav>
-        <a href="./Index.html" class="nav-link">Inicio</a>
+        <a href="./index segundo.html" class="nav-link">Inicio</a>
         <a href="./Noticias_destacadas.html" class="nav-link">Noticias Destacadas</a>
         <a href="./Sobre_nosotros.html" class="nav-link">Sobre nosotros</a>
 
@@ -40,7 +40,7 @@
                 discutiendo sobre una separación inminente de ambos. Los vecinos informan que la pelea se fue de las
                 manos para ambos, no saben quien comenzó con los golpes, pero finalmente los gritos de auxilio de
                 Alonso alertaron a los vecinos.</p>
-            <p>Al llegar a la residencia Ignacio Alonso Arteaga Méndez, la policia encuentra un cuadro de violencia
+            <p>Al llegar a la residencia de Ignacio Alonso Arteaga Méndez, la policia encuentra un cuadro de violencia
                 extrema, ambos
                 forcejeaban por adueñarse de un cuchillo de cocina y se golpeaban con mucha inquina.</p>
             <p>"Hace años que conozco a Alonso Arteaga - Comenta una vecina - siempre traía chicas a su casa, pero
@@ -50,28 +50,43 @@
             <p>Finalmente se realiza una orden de Aprehención para la señora Blanca Edith Gutierrez Mondragón, quien
                 trabaja para el Municipio de Almoloya de Juárez y se lleva en ambulancia al Señor Arteaga gravemente
                 herido por las cuchilladas en su pecho, abdomen y espalda. Estuvo internado luchando por su vida hasta que el
-                26 de noviembre de 2022 fallece debido a las complicaciones causadas por las heridas causadas en
+                26 de noviembre de 2022 fallece debido a las complicaciones causadas por las heridas causadas en el
                 abdomen. </p>
             
         </div>
-        <section>
-            <div class="Comentario">
-                
-               <div>
-                    <h3 class="Titulo">Deje un comentario: </h3>
-                    <textarea id="comment-input"></textarea><br>
-                    <button id="submit-button">Submit</button>
-                </div>
-
-                <div id="comment-section">
-                    <h3 class="Titulo">Los usuarios comentaron:</h3>
-                    <div id="comments-container"></div>
-                </div>
-
+        <section class="container">
+            <div class="Titulo2" id="comment-section">
+                <h2>Comentarios nuestros lectores:</h2>
+                <div class="comment" id="comment-container"></div>
+                <h3>Deje su Nombre y un Comentario:</h3>
+                <textarea id="comment-input"></textarea><br>
+                <button id="submit-button">Submit</button>
             </div>
         </section>
-    </div>
-    <script src="app.js"></script>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const commentsContainer = document.getElementById("comment-container");
+                const commentInput = document.getElementById("comment-input");
+                const submitButton = document.getElementById("submit-button");
+    
+                submitButton.addEventListener("click", function() {
+                    const commentText = commentInput.value;
+    
+                    if (commentText.trim() !== "") {
+                        const commentElement = document.createElement("div");
+                        commentElement.className = "comment";
+                        commentElement.textContent = commentText;
+                        commentsContainer.appendChild(commentElement);
+    
+                        // Clear the textarea after submission
+                        commentInput.value = "";
+                    }
+                });
+            });
+        </script>
+
+    <script src="./comentarios.js"></script>
 
 </body>
 
